@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+		<label for="addFirstName">Ad:</label>
+		<input type="text" id="addFirstName">
+        <label for="addLastName">Soyad:</label>
+		<input type="text" id="addLastName">
+		<label for="addPosition">Vəzifə:</label>
+		<select id="addPosition">
+			<option value="Developer">Developer</option>
+			<option value="Tester">Tester</option>
+            <option value="Product Owner">Product Owner</option>
+	    </select>
+	    <label for="addSalary">Maaş:</label>
+	    <input type="text" id="addSalary">
+	    <button class="addButton">Əlavə et</button>
+    </div>
+
+
+	<div>
+		<div>
+			<label for="minSalary">Minimum Maaş:</label>
+			<input type="text" id="minSalary">
+			<label for="maxSalary">Maksimum Maaş:</label>
+			<input type="text" id="maxSalary">
+			<button id="salaryFilterButton">Filterl'</button>
+		</div>
+	</div>
+	
+
+	<div>
+		<label for="positionFilter">Vəzifə:</label>
+		<select id="positionFilter">
+			<option value="All">All</option>
+			<option value="Developer">Developer</option>
+			<option value="Tester">Tester</option>
+            <option value="Product Owner">Product Owner</option>
+	    </select>
+		<button id="positionFilterButton">Filterl'</button>
+	</div>
+
+	<div class="search">
+		<input type="text" placeholder="Write Name" id="inputSearch" />
+	</div>
+	
+	<table id="employeeTable">
+		<thead>
+			<tr>
+				<th id="sortFirstName">Ad</th>
+                <th id="sortLastName">Soyad</th>
+				<th id="sortPosition">Vəzifə</th>
+				<th>Maaş</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<select id="positionSelect" style="display:none">
+		<option value="Developer">Developer</option>
+		<option value="Tester">Tester</option>
+		<option value="Product Owner">Product Owner</option>
+	  </select>
+	
+</body>
+</html>
